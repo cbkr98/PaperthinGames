@@ -20,7 +20,7 @@ a:visited {
 .jumbotron {
   position: relative;
   min-height: 450px;
-  background-image: url("../images/header.bmp");
+  background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -33,9 +33,6 @@ a:visited {
 .jumbotron-header {
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -200%);
   text-shadow: 2px 2px 9px #000000;
 }
 
@@ -55,15 +52,6 @@ a:visited {
 
 .ptg-bg-grey {
   background-color: rgb(246, 246, 246);
-}
-
-.row.equal-height {
-  display: flex;
-  flex-wrap: wrap;
-}
-.row.equal-height > [class*="col-"] {
-  display: flex;
-  flex-direction: column;
 }
 
 .card {
@@ -91,5 +79,13 @@ a.btn-primary.btn-ptg:hover {
 @media only screen and (max-width: 767px) {
   .card-game {
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .jumbotron-header {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
   }
 }
