@@ -1,0 +1,98 @@
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(150, 150, 150);
+    background-color: #000000;
+}
+
+a:link {
+    color: #cc0000;
+}
+
+a:hover {
+    color: #990000;
+}
+
+a:visited {
+    color: #cc0000;
+}
+
+.jumbotron {
+    position: relative;
+    min-height: 450px;
+    background-image: url("../images/header.bmp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    color: #fefbf4;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+}
+
+.jumbotron-header {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    text-shadow: 2px 2px 9px #000000;
+}
+
+.section-header {
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.ptg-text-red {
+    color: #cc0000;
+}
+
+.ptg-bg-red {
+    background-color: #cc0000;
+}
+
+.ptg-bg-grey {
+    background-color: rgb(246, 246, 246);
+}
+
+.row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.equal-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-img {
+    width: 100%;
+    height: 50vh;
+    object-fit: scale-down;
+}
+
+a.btn-primary.btn-ptg {
+    background-color: #cc0000;
+    border-color: #cc0000;
+    color: white;
+}
+
+a.btn-primary.btn-ptg:hover {
+    background-color: #990000;
+    border-color: #990000;
+    color: rgb(246, 246, 246);
+}
+
+@media only screen and (max-width: 767px) {
+    .card-game {
+        text-align: center;
+    }
+}
+
+
+
