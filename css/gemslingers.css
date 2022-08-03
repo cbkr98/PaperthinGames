@@ -102,7 +102,6 @@ a:visited {
 	/* filter: drop-shadow(0 0 0.75rem rgb(149, 149, 149)); */
 	filter: drop-shadow(0.1rem 0.2rem 0.75rem rgba(0, 0, 0, 0.3));
 	object-fit: scale-down;
-	max-height: 30vh;
 }
 
 .gs-availability {
@@ -133,13 +132,14 @@ a:visited {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	/* justify-content: center; */
 	padding: 2rem 0rem 2rem 3.5rem;
 }
 
 .gs-quick-info {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 1.5rem;
 }
 
 .gs-tag-quick-info {
@@ -159,7 +159,7 @@ a:visited {
 }
 
 .btn-gs {
-	width: 30%;
+	/* width: 30%; */
 	background: #cc0000;
 	border: 1px solid #cc0000;
 	border-radius: 6px;
@@ -274,19 +274,55 @@ a:visited {
 
 @media screen and (max-width: 346px) {
 	.gs-title {
-		font-size: 2.5rem;
+		font-size: 1.5rem;
+	}
+
+	.gs-availability {
+		font-size: 1.5rem;
+	}
+
+	.gs-img-info {
+		width: 60%;
+		align-self: center;
+	}
+
+	.gs-tag-quick-info {
+		font-size: 0.75rem;
 	}
 }
 
-@media screen and (min-width: 347px) and (max-width: 390px) {
+@media screen and (min-width: 347px) and (max-width: 414px) {
 	.gs-title {
-		font-size: 3rem;
+		font-size: 2rem;
+	}
+
+	.gs-img-info {
+		width: 60%;
+		align-self: center;
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 415px) and (max-width: 768px) {
+	.gs-img-producer {
+		width: 50%;
+	}
+
+	.gs-img-info {
+		width: 50%;
+		align-self: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
 	footer {
 		flex-direction: column;
+	}
+	.main-side-pad {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.gs-text {
+		text-align: center;
 	}
 
 	.gs-info,
@@ -302,9 +338,9 @@ a:visited {
 		/* justify-content: space-between; */
 	}
 
-	.gs-quick-info {
+	/* .gs-quick-info {
 		max-width: 40%;
-	}
+	} */
 
 	.gs-tag-quick-info {
 		margin-top: 0.25rem;
@@ -316,6 +352,10 @@ a:visited {
 		margin-bottom: 1.5rem;
 	}
 
+	.gs-producer-info-card {
+		margin-top: 3rem;
+	}
+
 	.gs-producer-info {
 		flex-direction: column;
 	}
@@ -324,17 +364,17 @@ a:visited {
 		padding: 1rem;
 	}
 
-	.gs-img-producer {
-		width: 50%;
-	}
-
 	.footer-content {
 		text-align: center;
 	}
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 769px) {
 	.gs-info {
 		height: 20rem;
+	}
+
+	.btn-gs {
+		max-width: 30%;
 	}
 }
