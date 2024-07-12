@@ -1,5 +1,61 @@
-/* GEMSLINGERS CSS */
+/* FONTS 
 
+COWBOY SLANG
+
+font-family: cowboyslang,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: cowboyslang-condensed,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: cowboyslang-expanded,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+SCALA SANS PRO
+
+- Scala Sans Pro Bold
+
+font-family: ff-scala-sans-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+- Scala Sans Pro Bold Italic
+
+font-family: ff-scala-sans-pro, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+- Scala Sans Pro Italic
+
+font-family: ff-scala-sans-pro, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+- Scala Sans Pro Regular
+
+font-family: ff-scala-sans-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+- Scala Sans Pro Condensed Bold
+
+font-family: ff-scala-sans-pro-condensed, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+- Scala Sans Pro Condensed
+
+font-family: ff-scala-sans-pro-condensed, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+*/
+
+/* GEMSLINGERS CSS */
 * {
 	margin: 0;
 	padding: 0;
@@ -12,7 +68,14 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	background: linear-gradient(45deg, #faa81d, #ffe07d, #faa81d);
+	/* background: linear-gradient(45deg, #faa81d, #ffe07d, #faa81d); */
+	background-color: #1f2421;
+	font-family: "ff-scala-sans-pro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.4rem;
+	line-height: 1.6;
+	color: #1f2421;
 }
 
 header {
@@ -37,9 +100,13 @@ main {
 	display: flex;
 	flex-direction: column;
 	background: white;
-	border-left: 1px solid rgba(80, 10, 0, 0.5);
+	/* border-left: 1px solid rgba(80, 10, 0, 0.5);
 	border-right: 1px solid rgba(80, 10, 0, 0.5);
-	box-shadow: 0 0 80px rgba(80, 10, 0, 0.3);
+	box-shadow: 0 0 80px rgba(80, 10, 0, 0.3); */
+}
+
+ul {
+	list-style: none;
 }
 
 footer {
@@ -69,10 +136,6 @@ a:visited {
 	padding-left: 3.5rem;
 	padding-right: 3.5rem;
 }
-.gs-text {
-	font-family: "Palatino", serif;
-	line-height: 1.5;
-}
 
 .gs-title-header {
 	padding-top: 1rem;
@@ -80,13 +143,38 @@ a:visited {
 }
 
 .gs-title {
-	font-family: "Rockwell Bold", serif;
+	font-family: "ff-scala-sans-pro", sans-serif;
+	font-weight: 700;
+	font-style: normal;
 	font-size: 3.5rem;
-	font-weight: 300;
+	/* font-weight: 300; */
 	line-height: 1.2;
 	text-align: center;
 	flex-wrap: nowrap;
 	margin-bottom: 0.75rem;
+}
+
+.gs-subtitle {
+	font-family: "cowboyslang-expanded", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2rem;
+	line-height: 1;
+	margin-bottom: 1.2rem;
+}
+
+.gs-subtitle-secondary {
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-bottom: 0.6rem;
+}
+
+.gs-list-item {
+	margin-bottom: 1rem;
+}
+
+.gs-list-item-left-indent {
+	padding-left: 36px;
 }
 
 .gs-img {
@@ -101,6 +189,7 @@ a:visited {
 .gs-img-info {
 	/* filter: drop-shadow(0 0 0.75rem rgb(149, 149, 149)); */
 	filter: drop-shadow(0.1rem 0.2rem 0.75rem rgba(0, 0, 0, 0.3));
+	border-radius: 11px;
 	object-fit: scale-down;
 }
 
@@ -117,6 +206,7 @@ a:visited {
 
 .gs-info-card {
 	padding-top: 1rem;
+	padding-bottom: 1rem;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -132,21 +222,25 @@ a:visited {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	/* justify-content: center; */
-	padding: 2rem 0rem 2rem 3.5rem;
+	justify-content: space-between;
+	padding: 0rem 0rem 0rem 3.5rem;
 }
 
 .gs-quick-info {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 1.5rem;
+	/* margin-bottom: 1.5rem; */
 }
 
 .gs-tag-quick-info {
 	color: white;
-	font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
-	font-weight: 600;
-	background-color: black;
+	font-family: "ff-scala-sans-pro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	/* font-weight: 600; */
+	background-color: #333;
 	border-radius: 1rem;
 	padding: 0.4rem 1rem;
 }
@@ -158,11 +252,16 @@ a:visited {
 	justify-content: space-around;
 }
 
+.gs-purchase {
+	display: flex;
+	align-items: center;
+}
+
 .btn-gs {
 	/* width: 30%; */
 	background: #cc0000;
 	border: 1px solid #cc0000;
-	border-radius: 6px;
+	border-radius: 25px;
 	box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
 	box-sizing: border-box;
 	color: #ffffff;
@@ -175,6 +274,7 @@ a:visited {
 	min-height: 40px;
 	outline: 0;
 	padding: 12px 14px;
+	/* margin-top: 18px; */
 	text-align: center;
 	text-rendering: geometricprecision;
 	text-transform: none;
@@ -190,30 +290,93 @@ a:visited {
 	color: rgb(246, 246, 246);
 }
 
+.gs-price {
+	/* margin-left: 2rem; */
+	font-size: xx-large;
+}
+
+.gs-how-to-play,
 .gs-producer-info-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	margin-top: 5rem;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 }
 
+.gs-how-to-play {
+	margin-top: 5rem;
+}
+
+.gs-how-to-play-header,
 .gs-producer-header {
+	font-family: "cowboyslang-expanded", sans-serif;
+	font-style: normal;
 	font-size: 40px;
-	font-weight: 500;
+	font-weight: 400;
 	margin-bottom: 0.5rem;
 	text-align: center;
+}
+
+.gs-how-to-play-subsection {
+	padding: 1rem 2rem;
+}
+
+.gs-how-to-play-description {
+	margin-bottom: 1.8rem;
+}
+
+.gs-gem-spell-lookup-table {
+	display: flex;
+	flex-direction: column;
+}
+.gs-lookup-row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+.gs-gem-img {
+	max-height: 75px;
+}
+.gs-gem-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 1.5rem;
+}
+
+.gs-gem-info .gs-subtitle-secondary {
+	margin-bottom: 0;
+	font-size: 1.4rem;
+}
+
+.gs-gem-info .gs-how-to-play-description {
+	margin-bottom: 0;
+}
+
+.gs-spell-name {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.3rem;
+}
+
+.gs-producer-info-card {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .gs-producer-description {
 	margin-top: 0.75rem;
 	margin-bottom: 0.75rem;
+	padding: 1rem 2rem;
 }
 
 .gs-producer-info {
 	display: flex;
-	margin-top: 0.75rem;
+	flex-direction: column;
+	row-gap: 2rem;
+	justify-content: space-around;
+	/* margin-top: 0.75rem; */
 }
 
 .gs-producer-info-details {
@@ -229,7 +392,9 @@ a:visited {
 }
 
 .gs-producer-name {
-	margin-bottom: 0.25rem;
+	/* margin-bottom: 0.25rem; */
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 .gs-contact-info-card {
